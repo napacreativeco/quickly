@@ -1,0 +1,57 @@
+// Page Fullwidth
+.page-container__fullwidth {
+  min-width: 100%;
+  max-width: 100%;
+  }
+.page-container__fullwidth-row {
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+// Page Thin
+.page-container__thin {
+  width: 80%;
+  margin: 0px auto 0px auto;
+}
+// Page w Sidebar
+.page-container__sidebar {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+// Page w Sidebar > Content Container
+.page-container__sidebar-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+// Page w Sidebar > Content Container
+.page-container__sidebar .sidebar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        margin: 5px 0px 10px 0px;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.blogpost, .page-container__fullwidth {
+  min-height: 100vh;
+  padding-top: 30px;
+}
+
+
+
+
+

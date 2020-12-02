@@ -1,0 +1,22 @@
+.store-message {
+    display: none;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    max-width: 100vw;
+    text-align: center;
+    padding: 3px;
+    font-size: 16px;
+      font-family: 'Roboto';
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+    i {
+      color: #fff;
+      padding-left: 15px;
+      position: absolute;
+      font-size: 19px;
+      right: 10%;
+    }
+  }

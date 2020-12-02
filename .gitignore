@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ignore everything in the root except the 
 
 # ignore everything in the "wp-content" directory, except:
@@ -20,3 +21,6 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+=======
+node_modules/
+>>>>>>> 585121df2c282688b4b02e385b79aaa16b5da606

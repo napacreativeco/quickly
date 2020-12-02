@@ -1,0 +1,28 @@
+/*
+ *  Global Resets
+ *
+*/
+
+* {
+    box-sizing: border-box;
+}
+body { 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* ===============
+   Page Container
+  ================ */
+  #primary.content-area {
+    margin: 0;
+    padding: 0px;
+  }
+  #main.site-main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }

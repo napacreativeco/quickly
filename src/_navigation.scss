@@ -1,0 +1,217 @@
+  
+.navigation {
+  width: 100vw;
+  max-width: 100vw;
+  
+    button {
+      padding: $button-padding;
+      border-radius: $button-border-radius;
+      background: #000;
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+      border: 0;
+      transition: background $timing, letter-spacing $timing, border-radius $timing;
+      cursor: pointer;
+    }
+    button:hover {
+      padding: $button-hover-padding;
+      background: transparent;
+      color: #000;
+      letter-spacing: 2px;
+      border: 2px solid #000;
+      border-radius: 25px;
+    }
+    i {
+      padding-left: 30px;
+      font-size: 22px;
+    }
+    i.fa-bars:hover {
+      animation: hoverskew $timing;
+    }
+    @keyframes hoverskew {
+      0% {  transform: skewX(0deg); }
+      20% {  transform: skewX(20deg); }
+      40% {  transform: skewX(0deg); }
+      60% { padding-right: 10px; }
+      80% { padding-right: 0px; }
+      95% { padding-right: 5px; }
+      100% { padding-right: 0px; }
+    }
+    .logo {
+      max-width: 280px;
+    }
+}
+/* Fix oversized link container */
+.navigation a.logo {
+  width: auto;
+}
+.navigation__row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navigation__cell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navigation__cell {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    li { margin-right: 20px; }
+    a {
+      text-decoration: none;
+      font-size: 1rem;
+    }
+}
+/* Links */
+.menu-item {
+  margin-right: 20px;
+
+    a {
+      color: inherit;
+    }
+    a:hover {
+      border-bottom: 2px solid #000;
+    }
+}
+// Sub Menu
+.sub-menu {
+  padding: 10px 20px 30px 30px;
+
+    li {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    li:last-of-type {
+      padding-bottom: 0px;
+    }
+}
+// main-nav for Desktop menu
+// mobile-nav for Mobile menu
+.main-nav {
+  white-space: nowrap;
+  position: relative;
+}
+.main-nav ul ul {
+  display: none;
+  position: absolute;
+  top: 45px;
+  z-index: 99;
+  background: #fff;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+// Sub-menu Arrow
+.main-nav ul > .menu-item-has-children > a::after {
+  content: "\f107";
+  padding-left: 6px;
+  font-size: 14px;
+  font-family: 'FontAwesome';
+}
+ul.sub-menu > .menu-item-has-children > a::after {
+  content: "►";
+  padding-left: 3px;
+}
+  
+  
+/* ======================
+*  Navigation Flyout Menu 
+* ====================== */
+.navigation__flyout {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  padding: 40px;
+
+    .logo {
+      max-width: 20%;
+      margin-bottom: 40px;
+    }
+}
+.burger-close {
+  top: 80px;
+  right: 80px;
+  position: fixed;
+  z-index: 9991;
+  font-size: 32px;
+}
+.navigation__flyout-row {
+  width: 100%;
+  margin: 100px auto 0px auto;
+}
+.navigation__flyout--top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+}
+.flyout-logo {
+  width: 300px;
+}
+.navigation__flyout--bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.navigation__flyout--logo {
+  
+}
+/* Desktop Menus */
+.navigation__flyout--menus.desktop {
+  display: flex;
+  flex-direction: row;
+}
+.navigation__flyout--menus .cell {
+  width: 33.32%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+.navigation__flyout--menus {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 20px 0px;
+    }
+    a {
+      text-decoration: none;
+      font-size: 34px;
+    }
+}
+/* Mobile Menus */
+.navigation__flyout--menu.mobile {
+  display: none;
+}
+.navigation__flyout--menu {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 20px 10px;
+    }
+    a {
+      text-decoration: none;
+      font-size: 34px;
+    }
+}
+
