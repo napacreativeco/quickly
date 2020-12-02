@@ -1,0 +1,64 @@
+/* Hamburger */
+.hamburger {
+    padding: 10px;
+    margin: 2.5px 20px 0px 20px;
+    height: 100%;
+    cursor: pointer;
+
+    .cheese { width: 20px; transition: width 1s; }
+    .meat { width: 30px; transition: width 0.7s; }
+    .bun { width: 40px; transition: width 0.3s; }
+}
+.cheese,
+.meat,
+.bun {
+    height: 4px;
+    background: #000;
+    border-radius: 25px;
+    content: '';
+    margin: 5px 0px 5px 0px;
+}
+/* Hover */
+.hamburger:hover {
+    .cheese { width: 30px; }
+    .meat { width: 50px; }
+    .bun { width: 60px; }
+}
+
+/* French Fries */
+.french-fries {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    cursor: pointer;
+
+    .fry {
+        height: 4px;
+        background: #000;
+        border-radius: 25px;
+        content: '';
+        width: 40px;
+        position: absolute;
+        transition: all 0.5s;
+    }
+}
+.fry.left {
+        transform: rotate(45deg);
+}
+.fry.right {
+        transform: rotate(-45deg);
+}
+.french-fries-hover.left {
+  display: none;
+}
+.french-fries-hover.right {
+    transform: rotate(0deg);
+}
+.french-fries-hover.right::after {
+    content: 'close';
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -2px;
+}

@@ -1,0 +1,118 @@
+/*!
+Theme Name: Quickly
+Author: Napa Creative Company
+Author URI: https://www.napacreativeco.com
+Description: A theme created for by Napa Creative Company.
+Tags: fullwidth
+Version: 1
+Requires PHP: 7.0
+Text Domain: ncc
+*/
+
+/* ===============
+       Reset
+  ================ */
+@import 'reset';
+
+/* ===============
+     Typography
+  ================ */
+h1, h2, h3, h4, h5 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+p, a, label, li, span, button, input, textarea, div {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 6px 0px;
+  font-size: 18px;
+  line-height: 1.6;;
+}
+a.button {
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+/* ===============
+     Gutenburg
+================ */
+@import 'gutenburg';
+
+/* ===============
+     Hamburger
+================ */
+@import 'hamburger';
+
+/* ===============
+      Effects
+================ */
+@import 'effects';
+  
+/* ===============
+      Buttons
+  ================ */
+$button-padding:       12px 16px;
+$button-hover-padding: 12px 18px;
+$button-border-radius: 3px;
+
+/* ===============
+      Helpers
+  ================ */
+$box-radius: 8px;
+$timing: 0.4s;
+
+
+/* ===============
+    Page Containers
+  ================ */
+@import 'containers';
+
+/* ===============
+      Preloader
+  ================ */
+@import 'preloader';
+
+/* ===================
+ *   Store Message 
+ * ================= */
+@import 'store-message';
+
+/* ======================
+      Navigation Globals
+  ======================= */
+@import 'navigation';
+
+/* ===================
+ *   Blog
+ * ================= */
+@import 'blog';
+
+/* ===================
+ *   Footer
+ * ================= */
+ footer { 
+   padding: 20px 40px;
+ }
+/* ===============
+      Widgets
+  ================ */
+  @import 'widgets';
+
+  
+ /* ===============
+     Media Queries
+  ================ */
+@import 'media-queries';
+
+
+ /* ===============
+     Demo Content
+  ================ */
+@import 'demo';
+
