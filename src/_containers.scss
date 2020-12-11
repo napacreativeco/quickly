@@ -4,7 +4,7 @@
   max-width: 100%;
   }
 .page-container__fullwidth-row {
-  padding: 40px;
+  padding: 20px 40px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -48,7 +48,6 @@
 }
 .blogpost, .page-container__fullwidth {
   min-height: 100vh;
-  padding-top: 30px;
 }
 
 
